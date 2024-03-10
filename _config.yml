@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-EN"
+locale                   : "ko-KR"
 title                    : "무한히 반짝이는 것"
 title_separator          : "-"
 subtitle                 : "모조의 작업 공간"
