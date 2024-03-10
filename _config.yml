@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "모조(MOJO)"
+  name             : "모조"
   avatar           : "/assets/images/logo_mojo.jpg"
   bio              : "반짝반짝 빛나는"
   location         : "South Korea"
