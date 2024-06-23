@@ -47,7 +47,5 @@ main:
       url: /german&europe2023/
 
   - title: "소개"
-    sublinks: 
-    - title: "모조"
-      url: /intro/
+    url: /intro/
 
