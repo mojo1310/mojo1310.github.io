@@ -10,3 +10,37 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+  - title: "창작"
+    sublinks: 
+    - title: "긴글"
+      url: /writing1
+    - title: "짧은글"
+      url: /writing2
+    - title: "일러스트"
+      url: /drawing
+    - title: "도예"
+      url: /pottery    
+    - title: "피아노"
+      url: /piano  
+      
+  - title: "공부"
+    sublinks: 
+    - title: "수학"
+      url: /math    
+    - title: "데이터 분석"
+      url: /dataanalysis
+    - title: "github"
+      url: /github
+    - title: "투자"
+      url: /invest
+      
+  - title: "여행"
+    sublinks: 
+    - title: "2013산티아고 순례길"
+      url: /pilgrim2013
+    - title: "2014파리와 유럽"
+      url: /paris&europe2014
+    - title: "2023독일과 동유럽"
+      url: /german&europe2023
+
