@@ -46,3 +46,8 @@ main:
     - title: "2023독일과 동유럽"
       url: /german&europe2023
 
+  - title: "소개"
+    sublinks: 
+    - title: "모조 소개"
+      url: /intro
+
