@@ -168,7 +168,49 @@
      Priority plus navigation
      ========================================================================== */
 
-.greedy-nav {
+.greedy-nav {  
+  // greedy-nav { 여기 내용은 임의로 수정한 값임 }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: $nav-height;
+  background: $background-color;
+
+  a {
+    display: block;
+    margin: 0 1rem;
+    color: $masthead-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+    }
+
+    &.site-logo {
+      margin-left: 0;
+      margin-right: 0.5rem;
+    }
+
+    &.site-title {
+      margin-left: 1;
+      font-size: 22px;
+    }
+  }
+
+  &__toggle {
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: $nav-toggle-height;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
   // to be shared by both hidden link and visible link
   .dropdown {
     // float: left;
