@@ -8,18 +8,18 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: $doc-font-size;
-
+  font-size: $doc-font-size*2/3;          /* 기존 폰트 사이즈 대비 2분의3배*/
+ 
   @include breakpoint($medium) {
-    font-size: $doc-font-size-medium;
+    font-size: $doc-font-size-medium*2/3;  /* 기존 폰트 사이즈 대비 2분의3배*/
   }
 
   @include breakpoint($large) {
-    font-size: $doc-font-size-large;
+    font-size: $doc-font-size-large*2/3;  /* 기존 폰트 사이즈 대비 2분의3배*/
   }
 
   @include breakpoint($x-large) {
-    font-size: $doc-font-size-x-large;
+    font-size: $doc-font-size-x-large*2/3;  /* 기존 폰트 사이즈 대비 2분의3배*/
   }
 
   -webkit-text-size-adjust: 100%;

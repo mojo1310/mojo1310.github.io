@@ -24,7 +24,19 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% include page__meta.html type=include.type %}
+    
+    <!--김민정 추가 부분s : 카테고리 페이지내 포스팅별 최초 게시일 작성-->
+    
+    {% if post.date %}
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%-Y년 %-m월 %-d일" }}</p>
+    {% endif %}
+    
+  <!--김민정 추가 부분e(참고: %B %d %Y 도 가능)-->
+    
+  <!--    {% include page__meta.html type=include.type %}    -->
+ <!--  _includes 경로의 page__meta.html 불러오는 코드 비활성화(read_time 제거)-->
+ 
+ 
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

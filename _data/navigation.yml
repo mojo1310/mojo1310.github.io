@@ -1,12 +1,70 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "주제별"
+    url: /categories
+  - title: "연도별"
+    url: /annual-archive
+  - title: "태그별"
+    url: /tag-archive
+  - title: "소개"
+    url: /about
+  # - title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+# 사이드바   
+sidebar-category:
+  - title: "배움 모음"
+    children: 
+      - title: "Database: MS-SQL"
+        url: /learn/mssql
+        category: "mssql"
+      - title: "Programming: Python"
+        url: /learn/python
+        category: "python"
+      - title: "Programming: R"
+        url: /learn/r
+        category: "r"
+      - title: "수학"
+        url: /learn/math
+        category: "math"
+      - title: "Github 블로그"
+        url: /learn/github
+        category: "github"
+      - title: "디지털 전환 프로젝트 회고"
+        url: /learn/project
+        category: "project"
+        
+  - title: "예술 모음"
+    children: 
+      - title: "짧은 글"
+        url: /art/writing_short
+        category: "writing_short"
+      - title: "긴 글"
+        url: /art/writing_long
+        category: "writing_long"
+      - title: "그림"
+        url: /art/illust
+        category: "illust"
+      - title: "발레"
+        url: /art/ballet
+        category: "ballet"
+      - title: "도예"
+        url: /art/ceramics
+        category: "ceramics"
+
+  - title: "추억 모음"
+    children: 
+      - title: "2013 산티아고순례길"
+        url: throwback/santiago_2013
+        category: "santiago_2013"
+      - title: "2014 유럽 여행"
+        url: throwback/europe_2014
+        category: "europe_2014"
+      - title: "2023 유럽 여행"
+        url: throwback/europe_2023
+        category: "europe_2023"
+      - title: "2024 유럽 여행"
+        url: throwback/europe_2024
+        category: "europe_2024"

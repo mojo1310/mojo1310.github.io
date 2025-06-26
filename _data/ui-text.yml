@@ -613,7 +613,8 @@ ko: &DEFAULT_KO
   meta_label                 :
   tags_label                 : "태그:"
   categories_label           : "카테고리:"
-  date_label                 : "업데이트:"
+  date_label                 : "최초 게시일:"   # 업데이트
+  modified_label             : "최종 수정일:"   # 김민정 추가
   comments_label             : "댓글남기기"
   comments_title             : "댓글"
   more_label                 : "더 보기"

@@ -124,20 +124,21 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  width: 140px;   /*default 36px*/
+  height: auto;  /*default 36px*/
 
-  @include breakpoint($large) {
+ /* @include breakpoint($large) {
     display: block;
     width: auto;
     height: auto;
-  }
+  }*/
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    /*max-width: 110px; */    /*프로필 사진 최대 크기*/
+    object-fit: cover;    /*(김민정 추가) 이미지 크기 조정 시 비율을 유지하면서 요소에 가득 채움. 넘치는 부분은 잘림*/
+    border-radius: 10%;   /*수치가 낮을 수록 사각형에 가까워짐, 50%는 원형*/
 
-    @include breakpoint($large) {
+    @include breakpoint($large) {      /*padding, border로 테두리 변경*/
       padding: 5px;
       border: 1px solid $border-color;
     }

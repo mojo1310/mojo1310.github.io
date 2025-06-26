@@ -34,8 +34,26 @@ layout: default
           <h1 id="page-title" class="page__title" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>
+        
+  
+ 
+ <!--(김민정 추가s)게시글 내 최초 게시일, 최종 수정일 추가 -->        
+              <font size="1"><p class="page__date">
+              
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "최초 게시일:" }} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-Y년 %-m월 %-d일" }}</time> &nbsp;&nbsp;&nbsp;&nbsp;
+              
+              <i class="fas fa-fw fa-edit" aria-hidden="true"></i>     {{ site.data.ui-text[site.locale].modified_label | default: "최종 수정일:" }} 
+  <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%-Y년 %-m월 %-d일" }}</time>
+  </p>
+  </font>
+      
+ <!--(김민정 추가e)게시글 내 최초 게시일, 최종 수정일 추가 -->    
+ 
+ 
+ 
           {%- endif %}
-          {% include page__meta.html %}
+          {% include page__meta.html %}   
+          <!--read_time 빼고 싶은데,, 제목과 본문을 분리하는 느낌이 좋아서 그대로 둠-->
         </header>
       {% endunless %}
 

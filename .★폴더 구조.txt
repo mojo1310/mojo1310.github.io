@@ -1,0 +1,4 @@
+블로그 전반 설정 : _config.yml 파일
+사이드바 카테고리, 상단 드롭다운 메뉴: _data/navigation.yml 파일, _pages/main 파일, _pages/sidebar-category 파일
+그림 등 콘텐츠 : assets 폴더
+글 작성 : _posts 폴더
